@@ -1,5 +1,22 @@
 {
     "name":"Débora Saioron",
     "job":"Dev Front-End",
-    "github":"saiorond"
+    "github":"saiorond",
+    "playlist": {
+        "jogos": [
+            {
+            "title": "Algum titulo",
+            "url": "url",
+            "thumb": "thumbnail do video"
+            }
+        ]
+
+        "front": [
+            {
+            "title": "Algum titulo",
+            "url": "url",
+            "thumb": "thumbnail do video"
+            }
+        ]
+    }
 }

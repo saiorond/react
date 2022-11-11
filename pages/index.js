@@ -8,7 +8,7 @@ function HomePage() {
         <div style={estiloHomePage}>
         <Menu />
         <Header />
-        <Timeline />
+        <Timeline playlists={config.playlist} />
         </div>
     );
 }
@@ -55,10 +55,13 @@ function Header(){
     )
 }
 
-function Timeline(){
+function Timeline(props) {
+    console.log("Dentro do componente", props)
+    const playlistNames = Object.keys(props.playlists)
     return (
         <div>
-            Timeline
+            front-end
+            jogos
         </div>
     )
 }

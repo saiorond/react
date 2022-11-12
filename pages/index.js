@@ -60,8 +60,19 @@ function Timeline(props) {
     const playlistNames = Object.keys(props.playlists)
     return (
         <div>
-            front-end
-            jogos
+            {playlistNames.map((playlistNames) => {
+                const videos  = props.playlists[playlistName];
+                return videos.map((video) => {
+                    return (
+                        <a href={videos.url}>
+                            <img src={video.thumb} />
+                            <span>
+                                {video.title}
+                            </span>
+                        </a>
+                    )
+                });
+            })}
         </div>
     )
 }

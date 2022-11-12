@@ -62,16 +62,23 @@ function Timeline(props) {
         <div>
             {playlistNames.map((playlistNames) => {
                 const videos  = props.playlists[playlistName];
-                return videos.map((video) => {
-                    return (
-                        <a href={videos.url}>
-                            <img src={video.thumb} />
-                            <span>
-                                {video.title}
-                            </span>
-                        </a>
-                    )
-                });
+                return (
+                    <section>
+                        <h2>{playlistName}</h2>
+                    <div>
+                        {videos.map((video) => {
+                        return (
+                            <a href={videos.url}>
+                                <img src={video.thumb} />
+                                <span>
+                                    {video.title}
+                                </span>
+                            </a>
+                        )
+                        })}
+                    </div>
+                    </section>
+                )
             })}
         </div>
     )
